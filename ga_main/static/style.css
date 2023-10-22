@@ -1,0 +1,231 @@
+body {
+  background: linear-gradient(#000000, #262829);
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px; /* تعديل حجم الخط هنا */
+  margin: 0; /* Remove default margin */
+}
+
+h1 {
+  text-align: center;
+  background-color: #063E55; /* لون الخلفية الجديد */
+  padding: 15px; /* تضبيط التباعد الداخلي */
+  border-radius: 10px; /* تدوير الحواف */
+  font-size: 18px;
+  font-size: 3rem;
+  margin-top: 30px;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+body {
+  background: linear-gradient(#333333, #111111); /* تغيير لون الخلفية العامة */
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  margin: 0; /* إزالة الهامش الافتراضي */
+}
+
+/* أنماط الصفحة الرئيسية (main) */
+#main-content {
+  background: linear-gradient(#000000, #262829);
+  /* أنماط أخرى للصفحة الرئيسية إذا لزم الأمر */
+}
+
+#chat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#chat-log {
+  padding: 20px;
+  margin-bottom: 10px; /* هذا للمسافة بين البوكس*/
+  border-radius: 10px;
+  background-color: rgba(39, 54, 68, 0.8);
+  max-width: 90%;
+  width: 800px;
+  height: 440px;
+  overflow-y: auto;
+  background-image: url('/static/logo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 6px rgba(228, 224, 224, 0.1); /* إضافة ظل */
+  border-radius: 10px; /* تدوير الحواف */
+}
+
+.user-message {
+  background-color: #0E4C73; /* box */
+  color: #ced4db;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  align-self: flex-start;
+  max-width: 80%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px; /* ******************  */
+}
+
+.bot-message {
+  background-color: #061f40;
+  color: #122641;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  align-self: flex-end;
+  max-width: 80%;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+ /* هذا لمكان كتابة النص  */
+#user-input {
+  width: 700px;
+  height: 80px;
+  padding: 20px;
+  border: none;
+  border-radius: 25px;
+  background-color: #E6F0F8;  
+  resize: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+#user-input:focus {
+  outline: none;
+  background-color: #D3E8F7;
+}
+
+#language-select {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #F2F2F2;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: #063E55;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #dbdcdc;
+}
+
+.placeholder {
+  color: #BBB;
+  font-style: italic;
+}
+
+.butlan {
+  margin-left: 250px;
+}
+
+#c-lan {
+  padding-inline: 40px;
+  display: block;
+  border: #E6E6E6;
+  /* top: 200px; */
+}
+
+#header1 {
+  padding-left: 35px;
+}
+
+#suggested-phrases {
+  margin-top: 10px;
+}
+
+#suggestions-container {
+  width: 289px;
+  max-height: 850px;
+  background-color: #010729;
+  padding: 20px;
+  position: fixed;
+  right: 20px;
+  top: 90px; /* تعديل الارتفاع ليكون أعلى */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow-y: auto;
+}
+
+.suggested-phrase {
+  display: block;
+  background-color: #0E4C73;
+  color: #A7C8F2;
+  border: none;
+  border-radius: 5px;
+  padding: 7px 15px; /* تصغير الهامش العمودي */
+  margin: 5px 0; /* تصغير الهامش الخارجي */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 12px;
+  text-align: right;
+  direction: rtl;
+  font-size: 15px; /* ******************  */ 
+}
+
+.suggested-phrase:hover {
+  background-color: #063E55;
+}
+
+#direction-toggle {
+  background-color: #063E55;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#direction-toggle:hover {
+  background-color: #ababab;
+}
+
+/* هذا خلفية صفحة الصندوق  */
+body {
+  font-family: 'Cairo', sans-serif; /* تغيير الخط إلى Cairo */
+  background: linear-gradient(#062f3f, #44AFF2);
+  color: white;
+  margin: 0;
+}
+
+#return {
+  background-color: white;
+  color: black;
+  border: 2px solid rgb(8, 61, 61);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  direction: center;
+  position: fixed; /* ثبت الزر في المكان الثابت */
+  top: 840px; /* تحديد المسافة من الأعلى */
+  right: 20px; /* تحديد المسافة من اليسار */
+  border-radius: 10px; /* تدوير الحواف */
+  transition: background-color 0.3s ease;
+}
+
+#return:hover,
+#return:active {
+  background-color: rgb(7, 49, 52);
+  color: white;
+  direction: center;
+}
+

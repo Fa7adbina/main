@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel = "icon" href="static\logo.png">
+    <title>Legal Researcher</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Legal Researcher</h1>
+        <div id="chat-container">
+            <!-- هنا الصندوق لعرض الكلام -->
+            <div id="chat-log"></div>
+            <!-- فهد كود  -->
+            <div id="typing-indicator" style="display: none;">يكتب الآن...</div>
+            </div> 
+            <div id="input-container">
+                <input type="text" id="user-input" placeholder="Write your message here..." />  
+            </div>
+            <div id="input-container">
+                   <select id="language-select">
+                       <option value="+AR">Arabic</option>
+                       <option value="+EN">English</option>
+                       <option value="+FR">French</option>
+                   </select>
+            </div>
+            <button id="send-button">Send</button>  
+        </div>
+
+        <a id="return" href="/">Return</a>
+        <div id="suggestions-container">
+            <!-- <div id="c-lan">Change language</div> -->
+            <button id="en" class="butlan" hidden>EN</button>
+            <button id="ar" class="butlan">AR</button>
+            <h1 id="header1">اقتراحات</h1>
+            <div id="suggested-phrases">
+                <h2 id="header4"></h2>
+                <button class="suggested-phrase" id="sug1-1">هل ترعى الدولة العلوم والآداب والثقافة و ماهو اسم النظام وكم رقم المادة؟</button>
+                <!-- <button class="suggested-phrase" id="sug1-2">هل يستمد الحكم في المملكة العربية السعودية سلطته من كتاب الله تعالى وماهو النظام والمادة؟</button>
+                <button class="suggested-phrase" id="sug1-3">Legal research in contract law</button> -->
+            </div>
+            <div id="suggested-phrases1">
+                <h2 id="header2"></h2>
+                <button class="suggested-phrase" id="sug2-1">هل يستمد الحكم في المملكة العربية السعودية سلطته من كتاب الله تعالى وماهو النظام والمادة؟</button>
+                <!-- <button class="suggested-phrase" id="sug2-2">Legal research in </button>
+                <button class="suggested-phrase" id="sug2-3">Legal research in contract </button>     -->
+            </div>
+
+            <div id="suggested-phrases2">
+                <h2 id="header3"></h2>
+                <button class="suggested-phrase" id="sug3-1">هل يجب ان يلتزم المقيمون في المملكة العربية السعودية بأنظمتها؟</button>
+                <!-- <button class="suggested-phrase"id="sug3-2">Legal research in </button>
+                <button class="suggested-phrase"id="sug3-3">Legal research in contract </button> -->
+               
+            </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
+
+
+
