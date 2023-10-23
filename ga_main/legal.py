@@ -19,11 +19,11 @@ csv_memory = ConversationBufferMemory()
 os.environ["OPENAI_API_KEY"] = "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"
 agent = create_csv_agent(OpenAI(temperature=0), 'legal1.csv', verbose=True)
 
-def Legal_Researcher(input_variable,language):
+def Legal_Researcher(input_variable):
     
   # input_variable_1 = input_variable+" . "+language
-  input_variable_1= agent.run(input_variable)
-  Output_For_Function= input_variable_1
+  # input_variable_1= agent.run(input_variable)
+  Output_For_Function= input_variable_1 + input_variable
 
   return Output_For_Function
 
