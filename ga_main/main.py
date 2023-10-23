@@ -19,7 +19,7 @@ def backend():
     # Receive the user input and language from the frontend
     user_input = request.json['message']
     # Process the user input and language using your Python function
-    response = Legal_Researcher(user_input,language)
+    response = Legal_Researcher(user_input)
 
     # Return the response to the frontend
     return jsonify({'message': response})
