@@ -18,8 +18,6 @@ def main():
 def backend():
     # Receive the user input and language from the frontend
     user_input = request.json['message']
-    language = request.json['language']
-
     # Process the user input and language using your Python function
     response = Legal_Researcher(user_input,language)
 
